@@ -1,0 +1,58 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Webinars{% endblock title %}
+{% block body %}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Webinars</h1>
+        </div>
+        <p>
+            We organise talks on various topics in Bioscience and Bioengineering semimonthly. You can find the details of
+            upcoming and previous talks on this page along with the slides and videos of the previous talks
+        </p>
+        <p>
+            If you are interested to attend the talks, please fill this <a href="#">form</a> to subscribe to out mailing
+            list. You can follow us on <a href="#">Facebook</a>, <a href="#">Twitter</a> or <a href="#">Linkedin</a> for
+            regular updates, and our <a href="#">YouTube</a> channel for recordings of the previous lectures.
+        </p>
+    </div>
+    <br>
+    <div class="container">
+        {% for webinar in Webinars %}
+        <div class="row">
+            <p>
+                <strong>Date: </strong>
+                {{webinar.Date}}
+            </p>
+            <p>
+                <strong>Time: </strong>
+                {{webinar.Time}}
+            </p>
+            <div class="col-3">
+                <img class="img-fluid" src="{{webinar.image.url}}">
+            </div>
+            <div class="col">
+                <p>
+                    <strong>Speaker: </strong>
+                    {{webinar.Speaker}}
+                </p>
+                <p>
+                    <strong>Title of Talk: </strong>
+                    {{webinar.Title}}
+                </p>
+                <p>
+                    <strong>Abstract: </strong>
+                    {{webinar.Abstract}}
+                </p>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
+    </div>
+    <hr/>
+</div>
+{% endblock body %}
+

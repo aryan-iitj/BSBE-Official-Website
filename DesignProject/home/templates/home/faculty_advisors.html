@@ -1,0 +1,384 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Staff{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-center">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+
+<div class="tab" align="center">
+    <button class="tablinks" onclick="opentype(event, 'RegularFaculty')" id="defaultOpen">Regular Faculty</button>
+    <button class="tablinks" onclick="opentype(event, 'YoungFacultyAssociates')">Young Faculty Associates</button>
+    <button class="tablinks" onclick="opentype(event, 'GuestFaculty')">Guest Faculty</button>
+    <button class="tablinks" onclick="opentype(event, 'AdjunctFaculty')">Adjunct Faculty</button>
+    <button class="tablinks" onclick="opentype(event, 'ScholarsinResidence')">Scholars-in-Residence</button>
+    <button class="tablinks" onclick="opentype(event, 'Advisors')">Advisors</button>
+    <button class="tablinks" onclick="opentype(event, 'FormerFaculty')">Former Faculty</button>
+</div>
+
+<div id="RegularFaculty" class="tabcontent align-items-center  ">
+    <div class="container-fluid ">
+    <div class="row justify-content-evenly">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'RegularFaculty' %}
+        <div class="card m-2" style="max-width: 540px;">
+            <div class="row ">
+              <div class="col-md-3">
+                <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">{{results.name1}}</h5>
+                  <p class="card-text">{{results.designation}}<br>
+                    {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                    {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                    {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                    {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div>
+</div>
+
+<div id="FormerFaculty" class="tabcontent align-items-center  ">
+  <div class="container-fluid ">
+  <div class="row justify-content-evenly">
+      {% for results in Faculty_Advisors %}
+      {% if results.FacultyType == 'FormerFaculty' %}
+      <div class="card m-2" style="max-width: 540px;">
+          <div class="row ">
+            <div class="col-md-3">
+              <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">{{results.name1}}</h5>
+                <p class="card-text">{{results.designation}}<br>
+                  {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                  {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                  {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                  {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+      {% endfor %}
+  </div>
+  </div>
+</div>
+<div id="YoungFacultyAssociates" class="tabcontent">
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in Faculty_Advisors %}
+            {% if results.FacultyType == 'YoungFacultyAssociates' %}
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                        {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+    
+    {% comment %} <div class="container">
+    <div class="row">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'YoungFacultyAssociates' %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+            {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+            {% if results.domain %}<b>{{results.domain}}</b>{% endif %}
+        <hr/>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div> {% endcomment %}
+</div>
+
+
+<div id="GuestFaculty" class="tabcontent">
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in Faculty_Advisors %}
+            {% if results.FacultyType == 'GuestFaculty' %}
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                        {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+
+
+
+    {% comment %} <div class="container">
+    <div class="row">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'GuestFaculty' %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+            {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+            {% if results.domain %}<b>{{results.domain}}</b>{% endif %}
+        <hr/>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div> {% endcomment %}
+</div>
+
+<div id="AdjunctFaculty" class="tabcontent">
+
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'AdjunctFaculty' %}
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                        {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+     {% comment %} <div class="container">
+    <div class="row">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'AdjunctFaculty' %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+            {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+            {% if results.domain %}<b>{{results.domain}}</b>{% endif %}
+        <hr/>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div>  {% endcomment %}
+</div>
+<div id="ScholarsinResidence" class="tabcontent">
+
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in Faculty_Advisors %}
+            {% if results.FacultyType == 'ScholarsinResidence' %}
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                        {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+
+    {% comment %} <div class="container">
+    <div class="row">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'ScholarsinResidence' %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+            {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+            {% if results.domain %}<b>{{results.domain}}</b>{% endif %}
+        <hr/>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div> {% endcomment %}
+</div>
+
+<div id="Advisors" class="tabcontent">
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in Faculty_Advisors %}
+            {% if results.FacultyType == 'Advisors' %}
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+                        {% if results.domain %}<i>{{results.domain}}</i>{% endif %}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+
+    {% comment %} <div class="container">
+    <div class="row">
+        {% for results in Faculty_Advisors %}
+        {% if results.FacultyType == 'Advisors' %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+            {% if results.phd %}<b>Ph.D:</b>{{results.phd}}<br>{% endif %}
+            {% if results.domain %}<b>{{results.domain}}</b>{% endif %}
+        <hr/>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    </div> {% endcomment %}
+</div>
+</div>
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+{% endblock body %}
+

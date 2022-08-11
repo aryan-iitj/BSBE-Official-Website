@@ -1,0 +1,247 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>Environmental Biotechnology</h1>
+        </div>
+
+        <br>
+        <img src="{% static 'home/images/EB1_image-2020-05-07-13-25-pm.jpg' %}" class="d-block w-100"  alt="..."><br>
+        <p>
+            Environmental biotechnology thematic lab at IITJ focusses on applications of microorganisms to curb environmental pollution, provide clean energy, and remediate toxic or hazardous waste. The versatile microbial metabolism enables their utilization for environmental cleanup. Another critical focus is waste to energy conversion systems, in particular, bioelectrochemical systems which combine the versatility of microbial metabolism with electrochemistry. The bioelectrochemical systems can also serve as biosensors for environmental monitoring and assessment
+        </p>
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Meenu Chhabra</b>
+                            </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Bioenergy & Bioremediation Group</b>
+                                <p>
+                                    <img src="{% static 'home/images/MC_Lab_image-2020-05-03-20-41-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                    The Environmental Biotechnology Laboratory at IIT Jodhpur carries out researches in the areas of bioenergy and bioremediation. Researchers in the lab investigate on waste to energy conversion processes to develop sustainable biotechnological solutions to water pollution and energy. At present, successful bioremediation processes for nitrate, uranium (VI), saline starch, and chromium (VI) contaminated water has been developed. Besides, low-cost Microbial Carbon Capture cells for power generation and algae cultivation have been developed. Also, researchers in the lab have been successful in isolating novel yeast with characteristics of the potential biodiesel producer.
+                                    <img src="{% static 'home/images/photo_2.JPG' %}" class="d-block w-100"  alt="...">
+
+                                </p>
+                            </li>
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Bioremediation of low-level waste including denitrification using Microbial fuel cells (Dr. Meenu Chhabra)</b>
+                            </li>
+                            <li>
+                                <b>Development of low-cost microbial carbon capture cells for algae cultivation and power generation (Dr. Meenu Chhabra)</b>
+                            </li>
+                        <li>
+                            <b>Developing paper based Microbial fuel cells for sensing applications (Dr. Meenu Chhabra)</b>
+                        </li>
+                        <li>
+                            <b>Exploring oleaginous yeast as potential biodiesel/drop-in biofuel producing candidates (Dr. Meenu Chhabra)</b>
+                        </li>
+                        <li>
+                            <b>Prototyping Microbial fuel cells (Dr. Meenu Chhabra)</b>
+                        </li>
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+                                    Multi-vessel fermenter<br>
+                                    Photobioreactor<br>
+                                    Algal growth chamber<br>
+                                    Electrochemical workstation<br>
+                                    Two-dimensional gel elecrophoresis system<br>
+                                    Denaturing gradient gel electrophoresis<br>
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

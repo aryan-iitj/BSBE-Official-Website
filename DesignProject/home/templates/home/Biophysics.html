@@ -1,0 +1,268 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>Biophysics</h1>
+        </div>
+        <br>
+        <p>
+            "Seeing is believing”…according to this famous quote, visual inspection paves the most convincing way to divulge naturally occurring phenomena. In Structural Biology and Protein Engineering lab, we aim to elucidate complex biological phenomena by unraveling the molecular snapshots of the concerned pathways through the atomic resolution structures of the macromolecules involved.  For this purpose, we principally use the cutting edge tools of structural biology (X-ray diffraction crystallography and single particle Cryo-Electron microscopy) to define the structure-function behavior of biological macromolecules
+        </p>
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Sudipta Bhattacharyya</b>
+                            </li>
+                        <li>
+                            <b>Dr.Neha Jain</b>
+                        </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Structural Biology & Protein Engineering Group</b>
+                                <p>
+                                    Our main focus is to deduce the molecular mechanism of diseased conditions. Likewise, taking a reductionist’s approach we target proteins or protein complexes involved in disease progression and pathogenesis to reveal their molecular mechanism of action. The detailed three dimensional structural information gained thereof, not only pinpoint the role of the target proteins/protein complexes but also help us to design structure based lead inhibitor libraries against these potential drug target candidates. Further kinetic characterization of these potential inhibitor leads against the drug candidate proteins is performed to validate their antagonistic properties in vitro. The structural biology and protein engineering lab also aims industrially important enzymes to customize their structure-function to cater industrial needs.  The high resolution structural information of the industrially important protein(s)/enzymes(s) also enable us to gain significant insights into their structure-function relationships which in turn allow us to tailor their function by the state of the art protein engineering and bioinformatic tools.
+
+                                    <img src="{% static 'home/images/SB_Lab_image-2020-05-03-20-03-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                    <br>
+
+                                </p>
+                            </li>
+                        <li>
+                            <b>Protein Aggregation & Amyloid Biology Group</b>
+                            <p>
+                                The lab is interested in understanding the altered folding of proteins which leads to formation of ordered aggregates called amyloids. Amyloids are highly stable ordered cross-β-sheet aggregates of proteins which are considered as the hallmark of neurodegenerative disorders like Parkinson’s and Alzheimer’s. We are interested in looking at amyloids that have both functional and disease-associated properties.
+
+                                <img src="{% static 'home/images/NJ_Lab_image-2020-05-03-20-49-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                We utilize various biophysical, biochemical and microbiological tools to answer some of the fascinating questions pertaining to amyloids fibrils. In particular we are interested in understanding two aspects of human amyloids:
+<br>
+1. How bacterial amyloids influence the aggregation of human amyloids and contribute to progression of neurodegenerative diseases?
+<br>
+2.  Development of unconventional strategies to modulate amyloid formation in humans.
+
+                            </p>
+                        </li>
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b> Structure based functional characterization of Staphylococcal thiol peroxidase enzymes: A new hunch for anti-Staphylococcal drug discovery (Dr. Sudipta Bhattacharya)</b>
+                                <p>
+                                    To explore a new avenue of anti-Staphylococcal drug designing research through structure based functional identification of thiol based antioxidant system
+                                </p>
+                            </li>
+                        <li>
+                            <b>Multimodal Approaches to Develop Potential Therapeutic LeadsTargeting Molecular Hot Spots of Duchenne Muscular Dystrophy for Clinical Trial (Dr. Sudipta Bhattacharya, Co-PI) (Approved)</b>
+                            <p>
+                            Molecular identification, characterization and validation of potential therapeutic agents for Duchhene Muscular Dystrophy
+                            </p>
+                        </li>
+                        <li>
+                            <b>Modulation of α-synuclein amyloid assembly using human chaperone like proteins (Dr. Neha Jain)</b>
+                            <p>
+                                Most of the human proteins rarely but remarkably undergo spontaneous conformational change in response to genetic or environmental stimuli. α-Synuclein is one such protein that undergoes conformational switch resulting in amyloid formation that is linked to Parkinson’s Disease (PD) progression. The present status of research on α-synuclein aggregation and PD progression reveals that the traditional therapy may not work to cure the disease in the long term. There is dire need of new therapeutic interventions that can either prevent PD or suppress it at the earlier stage of progression. The role of innate chaperone-like proteins in circumventing α-synuclein amyloid assembly and their potential as future drugs is still in its infancy. Here, we plan to explore the anti-amyloid activity of chaperone-like proteins against synuclein aggregation
+                            </p>
+                        </li>
+                        <li>
+                            <b>Evaluation of the effect of selected molecules on capsule synthesis by virulent Klebsiella pneumoniae (Dr. Shankar Manoharan)</b>
+                            <p>
+                                Klebsiella pneumoniae is a hospital-associated pathogen that is increasingly causing nosocomial infections. The enigmatic Klebsiella capsule is one of the major virulence factors protecting the microbe from several host defences. We study possible inhibitory effects of selected molecules on the synthesis of capsular polysaccharide by Klebsiella pneumoniae.
+                            </p>
+                        </li>
+
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+                                Coming Soon...
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

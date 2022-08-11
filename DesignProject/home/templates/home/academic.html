@@ -1,0 +1,234 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Academic{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Academic</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-evenly">
+            <div class="col-3">
+              <div class="card h-100">
+                <a href="#" class="btn btn-success btn-lg" >Undergraduate Programs</a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic1.png' %}" class="card-img-top" alt="...">
+                  
+                </div>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                     <a href="{% url 'BTech in Bioscience and Bioengineering' %}" target="_blank"> BTech in Bioscience and Bioengineering</a> 
+                </p>
+                {% comment %} <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link2</a> 
+                </p>
+                <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i> 
+                    <a href="#" target="_blank"> link3</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i><a href="#" target="_blank"> link4</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link5</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link6</a> 
+                </p>
+                 {% endcomment %}
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <a href="#" class="btn btn-success btn-lg" >Postgraduate Programs</a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic2.png' %}" class="card-img-top" alt="...">
+                  
+                </div>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                     <a href="{% url 'MTech in Bioengineering' %}" target="_blank"> MTech. in Bioengineering</a> 
+                </p>
+                <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="{% url 'MTech in Bioengineering' %}" target="_blank"> MTech.-PhD. Dual Degree</a> 
+                </p>
+                {% comment %} <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i> 
+                    <a href="#" target="_blank"> </a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i><a href="#" target="_blank"> link4</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link5</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link6</a> 
+                </p>
+                 {% endcomment %}
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <a href="#" class="btn btn-success btn-lg" >Doctorial Programs</a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic3.png' %}" class="card-img-top" alt="...">
+                  
+                  
+                </div>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                     <a href="{% url 'PhD in Bioengineering' %}" target="_blank"> PhD. in Bioengineering</a> 
+                </p>
+                {% comment %} <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link2</a> 
+                </p>
+                <p style="margin-left:20px;">
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i> 
+                    <a href="#" target="_blank"> link3</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i><a href="#" target="_blank"> link4</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link5</a> 
+                </p>
+                <p style="margin-left:20px;">   
+                    <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                    <a href="#" target="_blank"> link6</a> 
+                </p>
+                 {% endcomment %}
+              </div>
+            </div>
+          </div>
+        
+    </div> 
+</div>
+
+<br>
+<div class="container" >
+    <div class="row justify-content-evenly">
+        <div class="col-md-6 mt-4 mb-5"> 
+              <div>  <h3 class="text-center"> UseFull Information </h3> </div>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>To be updated soon</strong>
+                      </div>
+                    </div>
+                  </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Accordion Item #4
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-6 mt-4 mb-5">
+            
+            <div> <h3  class="text-center"> Quick Links </h3></div>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne1" class="accordion-collapse collapse show" aria-labelledby="headingOne1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo1" class="accordion-collapse collapse" aria-labelledby="headingTwo1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree1">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
+                        Accordion Item #3
+                      </button>
+                    </h2>
+                    <div id="collapseThree1" class="accordion-collapse collapse" aria-labelledby="headingThree1" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <strong>To be updated soon</strong>
+                        </div>
+                    </div>
+                  </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour1" aria-expanded="false" aria-controls="collapseFour1">
+                      Accordion Item #4
+                    </button>
+                  </h2>
+                  <div id="collapseFour1" class="accordion-collapse collapse" aria-labelledby="headingFour1" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>To be updated soon</strong>
+                    </div>
+                  </div>
+                </div>
+        </div>
+      </div>   
+    </div> 
+</div>
+
+
+
+
+{% endblock body %}

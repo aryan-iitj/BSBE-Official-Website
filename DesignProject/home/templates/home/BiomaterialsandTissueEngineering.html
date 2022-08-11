@@ -1,0 +1,257 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>Biomaterials & Tissue Engineering</h1>
+        </div>
+        <br>
+        <img src="{% static 'home/images/BMTE Theme_image-2020-05-03-16-21-pm.jpg' %}" class="d-block w-100"  alt="..."><br>
+        <p>Biomaterials and Tissue Engineering is a transdisciplinary knowledge domain and encompasses sub domains of material science, chemistry, physics, cell and molecular biology, chemical engineering, mechanical engineering, nanotechnology and microfluidics. Rapid evolution of biomaterials and tissue engineering is driven by the growing needs of medical devices, implants, drug delivery vehicles, and engineered tissues. Biomaterials and Tissue engineering has now become an integral component of the translational research in bioengineering. Research under the thematic area of Biomaterials and Tissue Engineering at Department of Bioscience and Bioengineering, IIT Jodhpur is primarily focused on the synthesis and characterization of smart biomaterials and nanomaterials, nanomedicine and nanotheranostics, drug delivery, engineering of tissue graft, organ-on-a chip devices, therapeutic angiogenesis and regenerative medicine.</p>
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Indranil Banerjee</b>
+                            </li>
+                        <li>
+                            <b>Dr.Raviraj Vankayala</b>
+                        </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Integrative Tissue Engineering Group</b>
+                                <p>
+                                    The focus of the Integrative tissue engineering laboratory is to decipher the underlying mechanism of tissue repair and regeneration over a length scale of ‘micro to nano’, and to translate the understanding into bioengineering strategies for tissue engineering and regenerative medicine. Precisely, we are keen to address three fundamental questions. Firstly, what are the novel clues (universal or cell specific) that contributes significantly to the physiological processes related to tissue repair and regeneration; secondly, how these different cues/factors co-exist, modulate and cooperate in tissue repair and regeneration and finally, up to what certainty such factors can be manipulated spatio-temporally to engineer the outcome of tissue engineering and regenerative medicine.
+
+                                    <img src="{% static 'home/images/IB Lab_image-2020-05-03-16-36-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                    In pursuance of the goal, we have adopted a trans-disciplinary approach that involves strategic amalgamation of the knowledge and techniques of cell biology, regenerative biology, biomaterial science, microfluidics, nanotechnology and tissue engineering. The benefit of such an approach is that it is comprehensive and integrative in nature like any complex physiological process. We believe that the integrative approach will help us to gain a deep insight and comprehensive understanding of tissue repair and regeneration. Furthermore, such an approach will make tissue engineering an affordable, reproducible and safe health care technology in near future for on-demand production of the so called spare parts of the human body.
+
+In line with the goal, we are now deducing the following problems<br>
+
+(i) Deciphering the mechanism of angiogenesis and tuning of the biomaterial mediated angiogenic response<br>
+
+(ii) Mechanistic analysis of osteogenic differentiation and biomaterial induced osteogenesis<br>
+
+(iii) Reconstruction of cell-friendly 3D microarchitecture with reproducible design parameters for bone tissue engineering.<br>
+
+(iv) Synthesis and characterization of cell derived membrane vesicles and understanding of its regenerative potential.<br>
+
+(v) Development of organ-on-chip to probe the cellular cross talk<br>
+                                    <br>
+
+                                </p>
+                            </li>
+                        <li>
+                            <b>Nanomedicine and Biomaterials Group</b>
+                            <p>
+                              Nature performs difficult tasks with perfection ensuring great simplicity and efficiency. Can we mimic nature to tailor different materials that can be used to diagnose and treat diverse diseases? Therein lie our focus and the passion behind our research. Here at Nanomedicine and Biomaterials Laboratory, we develop new generation multi-functional nanomedicines and biomaterials which have tremendous potential to address challenges in tackling diseases. Our focus areas are on the development of inorganic nanomaterials for cancer theranostics (diagnostics and therapeutics), polymeric and biomimetic delivery systems, biomaterials for modulation of tumor microenvironment, biomaterials for immunoengineering, and nanomaterials for gene therapy. This is highly interdisciplinary, as our research is mainly positioned at the intersection of engineering, biology, and medicine, and we work with a variety of collaborators to translate our materials towards clinical use.
+                                <img src="{% static 'home/images/RV Lab_image-2020-05-03-16-48-pm.jpg' %}" class="d-block w-100"  alt="...">
+
+
+                            </p>
+                        </li>
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Biomimetic Nanoscale Metal Organic Frameworks for Targeted Near Infrared Fluorescence Imaging and Phototherapeutic Destruction of Intraperitoneal Ovarian Tumors</b>
+                                <p>
+                                    This project is aimed at developing a novel type of nanoparticle formulation for intraoperative destruction of intraperitoneal tumors by combining molecular targeting of specific cancer cell biomarkers with phototherapeutic modality. Specifically, these nanoparticles are composed of nanoscale metal organic frameworks (nMOFs)-doped with an FDA approved NIR chromophore indocyanine green (ICG) and red blood cells. We refer to these nanoparticles as erythrocyte-mimicking folate conjugated nanoscale metal organic frameworks (E@F-nMOFs) to facilitate targeted near infrared (NIR) fluorescence imaging and phototherapeutic destruction of intraperitoneal ovarian tumors.
+                                </p>
+                            </li>
+
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+Coming Soon...
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

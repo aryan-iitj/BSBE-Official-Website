@@ -1,0 +1,65 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Research{% endblock title %}
+{% block body %}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Research</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-evenly">
+            <div class="col-3">
+              <div class="card h-100">
+                  <a href="{% url 'ResearchAreas' %}" class="btn btn-success btn-lg" >Research Areas </a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic1.png' %}" class="card-img-top" alt="...">
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <a href="{% url 'Projects' %}" class="btn btn-success btn-lg" >Projects</a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic2.png' %}" class="card-img-top" alt="...">
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card h-100">
+                <a href="{% url 'Sponsers&Collaborators' %}" class="btn btn-success btn-lg" >Sponserors & Collaborators</a>
+                <div class="card-body">
+                <img src="{% static 'home/images/academic3.png' %}" class="card-img-top" alt="...">
+
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-3">
+                <div class="card h-100">
+                  <a href="{% url 'researchlabs' %}" class="btn btn-success btn-lg" >Research labs</a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/academic3.png' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+          </div>
+
+    </div>
+</div>
+
+
+
+{% endblock body %}

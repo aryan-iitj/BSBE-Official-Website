@@ -1,0 +1,136 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ACM Student Chapter IITJ{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>ACM Student Chapter IIT Jodhpur</h1>
+        </div>
+        
+        <div class="col-md-12 m-md-3 p-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="detail-tab" data-bs-toggle="tab" data-bs-target="#detail" type="button" role="tab" aria-controls="detail" aria-selected="true">Detail</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="teammembers-tab" data-bs-toggle="tab" data-bs-target="#teammembers" type="button" role="tab" aria-controls="teammembers" aria-selected="false">Team members</button>
+                </li>
+            </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                    <div>
+                        <h2 class="h3 text-primary underlined mt-4" id="current_a"><span class="underlined-text">Introduction</span>
+                        </h2>
+                        <p class="mt-3"> Association for Computing Machinery (ACM) is the world’s largest educational and scientific society, uniting educators, researchers and professors. IIT Jodhpur ACM Student Chapter is a research community of students of undergraduate, postgraduate and doctoral levels along with prominent faculties. This chapter aims to focus on developing the habit of professional growth with technical and scientific approaches. Another objective of this group is to bring together the ignited minds and contribute towards the scientific development of the computing community through various activities such as workshops, webinars and coding competitions and many more.       
+                        </p>
+                        <h2 class="h3 text-primary underlined mt-4" id="current_a"><span class="underlined-text">Vision</span>
+                        </h2>
+                        <p>
+                            To start the Proceedings of ACM (PACM).<br>
+                            <b>Proposed Activities:</b> We have divided the activities into two categories academic and non-academic. The academic activities will primarily be research-oriented and career-building whereas the non-academic activities will be focused on strengthening the relationship between the department and institute. The non-academic activities are more fun activities.
+                        </p>
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    Academic Activities
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <b>An Interactive session:</b> The objective of this activity is to promote the learning of current trending topics of computer science. The participants will be taught about the basics of different computing domains by the respective experts in the domain. The domain topics are from various technologies which are hot topics in the industries. The difficulty level of the topics will be of three stages such as beginner stage, advanced stage and expert stage. Every domain will be well-taught through presentations and discussions over practical examples, which includes what the domain is? Where does it get you? How should you start with? etc., followed by a question and answer session in which the mentors cleared all the doubts of the attendees. Once all the domains are covered, there will be an interactive session among the mentors and the attendees for an unconfined exchange of views so that the beginners can learn about the latest updates in their particular interests.
+                                        </li>
+                                        <li>
+                                            <b>UG Research showcase:</b>This activity basically promotes the UG level students to showcase their research ability. This event will encourage the students to think real-time problem solving with innovative ideas. The idea can be presented in the form of a poster or in technical writing such as a research paper article.
+                                        </li>
+                                        <li>
+                                            <b>Open Problem Solving:</b> This activity aims to focus on solving open challenging problems which are challenging for industries, government organizations or individuals. The category of problem-solving spans many areas such as privacy, security, autonomous systems, digital property rights, system analysis, system optimization and many more.
+                                        </li>
+                                        <li>
+                                            <b>Workshops and Webinars:</b> This event aims to focus specifically on spreading awareness of cutting edge technologies like machine learning, autonomous and self-sustaining systems, driverless transportation, food processing, medical image analysis, blockchain, cryptocurrency, decentralized finance, Internet of Technology (IoT), Vehicular ad hoc network (VANET), Deep learning for document image analysis, social network analysis, Computer Vision, AR/VR, Document Intelligence, Urban computing, and many more. At the end of the workshop participants will be asked to solve the quiz based on the session and the top attendees will be awarded.
+                                        </li>
+                                        <li>
+                                            <b>Codeathon:</b> Codeathons are events where coders are encouraged to answer questions by providing a refined code to pass a given number of test cases for each question. This activity happens in a competitive environment where the best coders showcase their coding skills. IITJ ACM Student Chapter, in collaboration with some reputed organizations such as Github, Redhat, simplilearn, Edureka, unacademy and many others. The time span for the activities can be from a few hours to some days. The competitors have to work their way on the tough questions to get themselves a competitive edge over the other participants. It's a tough and knowledgeable competition that taught the participants to work under pressure. The coders with the most diversified skill sets will prevail in the competition.
+                                        </li>
+                                        <li>
+                                            <b>My research in 2-3 minutes (Elevator Pitch):</b> This will be a presentation competition where the students can present their research within the time limit of 2-3 minutes, and the best presentation will be awarded by a panel of experts from different research backgrounds.
+                                        </li>
+                                        <li>
+                                            <b>Panel Discussion:</b> This event can be scheduled on a trimester basis that is in every 3-4 months. A panel discussion or debate will be organized where research scholars and experts discuss some cutting edge technological fallouts or recent advancements in the respective research fields. This will help us to spread awareness about the recent trends in technology.
+                                        </li>
+                                        <li>
+                                            <b>Golden Rules for Research Process:</b> The event is to be hosted specifically targeting graduate and postgraduate students who are seeking to start. Experts from Academia and Industry will be guiding and sharing their experience.
+                                        </li>
+                                        <li>
+                                            <b>Research Collaboration Meet:</b> Researchers working in the same domain can collaborate with each other through a weekly meet to enhance research direction.
+                                        </li>
+                                        <li>
+                                            <b>Departmental Posters:</b> Gather a group of students to make posters advertising all of the departmental events. Alternatively, students may create posters advertising course offerings for the upcoming semester, focusing on the fact that just one computer science course can be beneficial regardless of the person’s major.
+                                        </li>
+                                        <li>
+                                            <b>Poster Session:</b> Organize a small poster session for students who have conducted summer research and participated in internships. Consider a cooperative effort with any and all local ACM student chapters.
+                                        </li>
+                                        <li>
+                                            <b>Interdisciplinary Posters:</b> This activity basically focuses on the integration of computer science with other disciplines such as bioscience, humanities and many others. This will benefit the students to think about solving problems of other disciplines with the computer science approach.
+                                        </li>
+                                        <li>
+                                            <b>Newsletter:</b> Form a group of students who are responsible for writing a monthly newsletter. Topics for the newsletter may include articles from the alumni or faculty, senior profiles, advice from students, lists of upcoming events, etc. The newsletter can be a hard copy or e‐form.
+                                        </l                                 </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    Non-Academic Activities
+                                </button>
+                              </h2>
+                              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>
+                                            <b>Research Scholar Day (RSD) Celebration:</b> Once a year, a research festival can be organized where different research experts can be invited for the expert talk, and different research-related competitions like paper presentation, poster presentation, best abstract submission, creative title, etc. can be organized.
+                                        </li>
+                                        <li>
+                                            <b>Meet the Grads Night:</b> Invite recent graduates to talk to current students in the computer science department. The graduates should be a mix of people who went to graduate school and people who started their careers right after graduation.
+                                        </li>
+                                        <li>
+                                            <b>Bulletin Boards:</b> Gather a group of students to make announcement boards to be placed in public areas, advertising classes in the computer science department, career possibilities, research posters, pictures of local award winners and people in the news, tutoring opportunities, grants scholarships, other chapter meetings, etc. Popular places to post would be restrooms, inside classrooms, and in dorms. Consider fun pictures of officers, blown up to poster size. This also helps to dispel stereotypes.
+                                        </li>
+                                        <li>
+                                            <b>Scrapbook:</b> Organize a group with scrapbook experience to construct a "people in computing" scrapbook. When high school people come for visits, show them the book. When young people in introductory classes talk about majoring or when faculty members suggest it, also share the scrapbook with them.
+                                        </li>
+                                        <li>
+                                            <b>Buddy System:</b> At the beginning of each semester, hold a meeting where people can gather and meet the other people in their classes. The students can then pair up with each other (or form small groups) and set up times to meet outside the classroom throughout the semester so that the class goes more smoothly for each.
+                                        </li>
+                                        <li><b>Science and Cultural Fair:</b> Ask for student volunteers to judge high school or grad school level science fair projects.
+                                        Achievement Parties: Celebrate when students or faculty members in the department gain special recognition. Examples include job offers, graduate school acceptance or receipt of an award of special significance.
+                                        </li>
+                                    </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+
+                    
+                </div>
+                <div class="tab-pane fade" id="teammembers" role="tabpanel" aria-labelledby="team members-tab">
+                    hello
+                </div>
+            
+              </div>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+
+
+{% endblock body %}

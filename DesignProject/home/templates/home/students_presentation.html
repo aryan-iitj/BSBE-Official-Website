@@ -1,0 +1,48 @@
+{% extends 'home/base.html' %}
+
+{% block title %}StudentPresenations{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Students Presentations</h1>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <br>
+    <div class="container">
+        {% for ppt in PPTS %}
+        <div class="row">
+            <div class="col-3">
+                <img class="img-fluid" src="{{ppt.image.url}}">
+            </div>
+            <div class="col">
+                <p>
+                <strong>Date: </strong>
+                {{ppt.Date}}
+                </p>
+                <p>
+                <strong>Time: </strong>
+                {{ppt.Time}}
+                 </p>
+                <p>
+                    <strong>Presenter: </strong>
+                    {{ppt.Presenter}}
+                </p>
+                <p>
+                    <strong>Topic: </strong>
+                    {{ppt.Topic}}
+                </p>
+            </div>
+        </div>
+        <hr/>
+        {% endfor %}
+    </div>
+    <hr/>
+</div>
+{% endblock body %}
+
+

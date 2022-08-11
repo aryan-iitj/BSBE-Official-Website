@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Publication</title>
+</head>
+<body>
+    
+    <table>
+        <tr>
+            <th>PMID</th>
+            <th>Title</th>
+        </tr>
+        {% for article in articles %}
+        <tr>
+            <td>{{ article.pmid }}</td>
+            <td><a href={{ article.link }}>{{ article.title }}</a></td>
+        </tr>
+        {% endfor %}
+        <!--<tr>
+            <td>123</td>
+            <td><a href="https://pubmed.ncbi.nlm.nih.gov/35032484/">abc</a></td>
+        </tr>-->
+    </table>
+</body>
+</html>

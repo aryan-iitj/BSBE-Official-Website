@@ -1,0 +1,125 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Research Areas{% endblock title %}
+{% block body %}
+{% load static %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Research Areas</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-evenly">
+            <div class="col-4">
+              <div class="card h-20">
+                <a href="{% url 'Cell&MolecularPhysiology' %}" class="btn btn-success btn-lg" >Cell & Molecular Physiology </a>
+
+                <div class="card-body">
+                <img src="{% static 'home/images/cell&molecularphysiology.JPG' %}" class="card-img-top" alt="...">
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card h-20">
+                <a href="{% url 'EnvironmentalBiotechnology' %}" class="btn btn-success btn-lg" >Environmental Biotechnology </a>
+                <div class="card-body">
+                <img src="{% static 'home/images/environmentalbio.JPG' %}" class="card-img-top" alt="...">
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card h-20">
+                <a href="{% url 'BiomaterialsandTissueEngineering' %}" class="btn btn-success btn-lg" >Biomaterials &   Tissue Engineering  </a>
+                <div class="card-body">
+                <img src="{% static 'home/images/biomaterial&tissueengg.JPG' %}" class="card-img-top" alt="...">
+
+
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'ChemicalBiologyandDrugDesign' %}" class="btn btn-success btn-lg" >Chemical Biology & Drug Design</a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/chemicalbiology&drugdrsign.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'MolecularMicrobiology&MicrobialGenomics' %}" class="btn btn-success btn-lg" >Molecular Microbiology & Microbial Genomics</a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/molecularmicro&microbialgenomics.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'Biophysics' %}" class="btn btn-success btn-lg" >Biophysics </a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/biophysics.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'ComputationalBiology&Bioinformatics' %}" class="btn btn-success btn-lg" > Computational Biology & Bioinformatics</a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/computationalbiologyandbioinformatics.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'MolecularMotors&CellMotility' %}" class="btn btn-success btn-lg" > Molecular Motors & Cell Motility</a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/molecularmotos&cellmob.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+            <div class="col-4">
+                <div class="card h-20">
+                  <a href="{% url 'Neuroscience&Neuroengineering' %}" class="btn btn-success btn-lg" > Neuroscience & Neuroengineering </a>
+                  <div class="card-body">
+                  <img src="{% static 'home/images/neurosci&engg.JPG' %}" class="card-img-top" alt="...">
+                 </div>
+
+
+                </div>
+              </div>
+
+
+
+
+          </div>
+
+    </div>
+</div>
+
+
+
+{% endblock body %}

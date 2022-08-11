@@ -1,0 +1,101 @@
+{% extends 'home/base.html' %}
+
+{% block title %}News & Events{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>News & Events</h1>
+        </div>
+        <div class="col-md-1-12">
+            <table class="table  table-striped table-bordered" id="data-table">
+    
+                <thead>
+                  <tr>
+                    <th scope="col" class="text-center">No.</th>
+                    <th scope="col" class="text-center">News & Events</th>
+              
+                  </tr>
+                </thead>
+                <tbody id="mytable">
+                {% for news in News %}
+                  <tr>
+              
+                      <th scope="row"> {{ forloop.counter }}</th>
+                      
+                      <td><a href = {{ news.link }}>{{ news.title }}</a></td>
+              
+                  </tr>
+                {% endfor %}
+              
+                </tbody>
+              </table>
+        </div>
+        <div class="col-md-1-12">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item ">
+                  <h2 class="accordion-header " id="panelsStayOpen-headingOne">
+                    <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                        News Achive
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse " aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                    <ol>
+                            <li>
+                                <b>An Interactive session:</b> The objective of this activity is to promote the learning of current trending topics of computer science. The participants will be taught about the basics of different computing domains by the respective experts in the domain. The domain topics are from various technologies which are hot topics in the industries. The difficulty level of the topics will be of three stages such as beginner stage, advanced stage and expert stage. Every domain will be well-taught through presentations and discussions over practical examples, which includes what the domain is? Where does it get you? How should you start with? etc., followed by a question and answer session in which the mentors cleared all the doubts of the attendees. Once all the domains are covered, there will be an interactive session among the mentors and the attendees for an unconfined exchange of views so that the beginners can learn about the latest updates in their particular interests.
+                            </li>
+                            <li>
+                                <b>UG Research showcase:</b>This activity basically promotes the UG level students to showcase their research ability. This event will encourage the students to think real-time problem solving with innovative ideas. The idea can be presented in the form of a poster or in technical writing such as a research paper article.
+                            </li>
+                            <li>
+                                <b>Open Problem Solving:</b> This activity aims to focus on solving open challenging problems which are challenging for industries, government organizations or individuals. The category of problem-solving spans many areas such as privacy, security, autonomous systems, digital property rights, system analysis, system optimization and many more.
+                            </li>
+                            <li>
+                                <b>Workshops and Webinars:</b> This event aims to focus specifically on spreading awareness of cutting edge technologies like machine learning, autonomous and self-sustaining systems, driverless transportation, food processing, medical image analysis, blockchain, cryptocurrency, decentralized finance, Internet of Technology (IoT), Vehicular ad hoc network (VANET), Deep learning for document image analysis, social network analysis, Computer Vision, AR/VR, Document Intelligence, Urban computing, and many more. At the end of the workshop participants will be asked to solve the quiz based on the session and the top attendees will be awarded.
+                            </li>
+                            <li>
+                                <b>Codeathon:</b> Codeathons are events where coders are encouraged to answer questions by providing a refined code to pass a given number of test cases for each question. This activity happens in a competitive environment where the best coders showcase their coding skills. IITJ ACM Student Chapter, in collaboration with some reputed organizations such as Github, Redhat, simplilearn, Edureka, unacademy and many others. The time span for the activities can be from a few hours to some days. The competitors have to work their way on the tough questions to get themselves a competitive edge over the other participants. It's a tough and knowledgeable competition that taught the participants to work under pressure. The coders with the most diversified skill sets will prevail in the competition.
+                            </li>
+                            <li>
+                                <b>My research in 2-3 minutes (Elevator Pitch):</b> This will be a presentation competition where the students can present their research within the time limit of 2-3 minutes, and the best presentation will be awarded by a panel of experts from different research backgrounds.
+                            </li>
+                            <li>
+                                <b>Panel Discussion:</b> This event can be scheduled on a trimester basis that is in every 3-4 months. A panel discussion or debate will be organized where research scholars and experts discuss some cutting edge technological fallouts or recent advancements in the respective research fields. This will help us to spread awareness about the recent trends in technology.
+                            </li>
+                            <li>
+                                <b>Golden Rules for Research Process:</b> The event is to be hosted specifically targeting graduate and postgraduate students who are seeking to start. Experts from Academia and Industry will be guiding and sharing their experience.
+                            </li>
+                            <li>
+                                <b>Research Collaboration Meet:</b> Researchers working in the same domain can collaborate with each other through a weekly meet to enhance research direction.
+                            </li>
+                            <li>
+                                <b>Departmental Posters:</b> Gather a group of students to make posters advertising all of the departmental events. Alternatively, students may create posters advertising course offerings for the upcoming semester, focusing on the fact that just one computer science course can be beneficial regardless of the person’s major.
+                            </li>
+                            <li>
+                                <b>Poster Session:</b> Organize a small poster session for students who have conducted summer research and participated in internships. Consider a cooperative effort with any and all local ACM student chapters.
+                            </li>
+                            <li>
+                                <b>Interdisciplinary Posters:</b> This activity basically focuses on the integration of computer science with other disciplines such as bioscience, humanities and many others. This will benefit the students to think about solving problems of other disciplines with the computer science approach.
+                            </li>
+                            <li>
+                                <b>Newsletter:</b> Form a group of students who are responsible for writing a monthly newsletter. Topics for the newsletter may include articles from the alumni or faculty, senior profiles, advice from students, lists of upcoming events, etc. The newsletter can be a hard copy or e‐form.
+                            </l >                                
+                        </ol>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        
+    </div> 
+    
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

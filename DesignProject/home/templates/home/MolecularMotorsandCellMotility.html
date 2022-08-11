@@ -1,0 +1,259 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>
+Molecular Motors & Cell Motility</h1>
+        </div>
+        <br>
+        <p>
+            “Almost all aspects of life are engineered at the molecular level, and without understanding molecules we can only have a very sketchy understanding of life itself." — Francis Crick, Nobel Laureate
+
+The mechanical work for the cell is performed by the molecular motors along the cell cytoskeleton. The thematic group is focused on understanding these molecular motors & cell motility in the healthy & diseased states.
+        </p>
+        <img src="{% static 'home/images/MMCM1_image-2020-05-07-13-40-pm.jpg' %}" class="d-block w-100"  alt="..."><br>
+
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Priyanka Singh</b>
+                            </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Centrosome Biology Group</b>
+                                <p>
+                                    <img src="{% static 'home/images/PS_Lab_image-2020-05-03-22-30-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                    Centrosomes are molecular machineries which are involved in a plethora of cell functions like spindle organization, cell migration and cell polarization. Their number, position, organization & functioning is precisely regulated in a cell. Any defect in centrosome structure or number could lead to several human diseases like cancer, neurodevelopmental disorders and ciliopathies. The Centrosome Biology group is utilizing a combination of cellular, molecular and biochemical approaches, in order to understand the molecular details of centrosome organization in mammalian cells.
+
+
+                                    <br>
+
+                                </p>
+                            </li>
+
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Elucidating the Role of Centrosome Protein CEP152 in Primary Microcephaly (Dr. Priyanka Singh)</b>
+                                <p>
+                                    This project has great potential to develop a molecular understanding of microcephaly development. This might be useful for gene-therapy technologies targeting such diseases. Furthermore, this work will also improve our molecular understanding of centrosome associated proteins in cell division, which can be further extrapolated to look into neural-stem cell divisions.
+                                </p>
+
+                            </li>
+                        <li>
+                            <b>Role of Centriole Protein,CPAP in Neurodevelopmental Disorder (Dr. Priyanka Singh)</b>
+                            <p>
+                                We propose a comprehensive approach using cellular, molecular and biochemical methods, to map out CPAP interaction with core centriole proteins and mutation in CPAP leading to neurodevelopmental disorder.
+                            </p>
+
+                        </li>
+
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+                                    Cell culture facility<br>
+                                    Biosafety cabinet<br>
+                                    Inverted light microscope<br>
+                                    -20 °C freezer<br>
+                                    Nanodrop spectrophotometer<br>
+                                    -80 °C freezer<br>
+                                    Gradient thermal cycler<br>
+                                    Bacteriological incubator<br>
+                                    Electrophoresis systems<br>
+                                    Refrigerated centrifuge<br>
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

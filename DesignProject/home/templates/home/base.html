@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'home/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+    
+</head>
+<body onload="myFunction()">
+<div id="loading"></div>
+    {% comment %} logo row {% endcomment %}
+    <div style="background-color: green; border-bottom: 2px solid white">
+        <a href="https://iitj.ac.in/">
+            <img src="https://typeset-partner-institution.s3.us-west-2.amazonaws.com/iit-jodhpur/organization/iitj-logo-white.png" alt height="110px">
+        </a>
+    </div>
+
+    {% comment %} navigation bar {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: green;">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        People
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/people/faculty_advisors">Faculty & Advisors</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                                <a class="dropdown-item">  Staff &raquo;</a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                  <li>
+                                    <a class="dropdown-item" href="/people/staff/TechnicalStaff">Technical Staff</a>
+                                  </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                  <li>
+                                    <a class="dropdown-item" href="/people/staff/AdministrativeStaff">Administrative Staff</a>
+                                  </li>
+                                </ul>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/people/Phd_students">PhD Students</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="/academic">Academics</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="/research">Research</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Events
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/events/webinars">Webinars</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/events/students_presentation">Student Presentation</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Students
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/students/placements">Placements</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/students/alumni">Alumni</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/students/club_activity">Club Activity</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/joinus">Join Us</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="/contacts">Contacts</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link active" href="/pubmed">Pubmed</a>
+                </li>
+                {% if display_intranet %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Intranet
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                                <a class="dropdown-item">  All Faculties &raquo;</a>
+                                <ul class="dropdown-menu dropdown-submenu">
+                                    <li>
+                                        <a class="dropdown-item" href="/AllFaculties/Publications">Publications</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="/AllFaculties/Awards">Awards</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="/AllFaculties/ProjectStudents">Project Students</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li>
+                                        <a class="dropdown-item" href="/AllFaculties/Projects">Projects</a>
+                                    </li>
+
+                                </ul>
+                        </li>
+                        <!--<li><a class="dropdown-item" href="/intranet/allfaculties">All Faculties</a></li>-->
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/intranet/students">Students</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/intranet/equipment">Equipment</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/intranet/ta">TA</a></li>
+
+
+                    </ul>
+                </li>
+                {% endif %}
+
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+    {% endblock body %}
+
+
+
+
+{% comment %} footer {% endcomment %}
+
+
+
+
+  <!-- Footer -->
+  <footer
+          class="text-center text-lg-start text-black-60"
+
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              <p><i class="fas fa-home mr-3"></i> Address</p>
+            </h6>
+            <p>
+              Department of BSBE Building<br>	 
+Indian Institute of Technology Jodhpur<br>	 
+NH 62 Nagaur Road	 
+Karwar <br> PinCode - 342030	 
+Jodhpur District
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+
+
+          <!-- Grid column -->
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+
+            <p><i class="fas fa-envelope mr-3"></i> head_bb@iitj.ac.in</p>
+            <p><i class="fas fa-phone mr-3"></i> (0291) 2801202</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2022 Copyright:
+              <a class="text-dark" href="BSBE.iitj.ac.in">BSBE-Department</a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-dark btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-dark btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-twitter"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-dark btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-dark btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram"></i
+              ></a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+
+
+
+
+    <script src="{% static 'home/js/jquery.js' %}"></script>
+    <script src="{% static 'home/js/popper.js' %}"></script>
+    <script src="{% static 'home/js/all.min.js' %}"></script>
+    <script src="{% static 'home/js/bootstrap.js' %}"></script>
+    <script>
+
+		var preloader = document.getElementById("loading");
+
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
+</body>
+</html>

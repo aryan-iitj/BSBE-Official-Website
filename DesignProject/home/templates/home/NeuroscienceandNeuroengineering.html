@@ -1,0 +1,256 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>
+
+Neuroscience & Neuroengineering</h1>
+        </div>
+        <br>
+        <p>
+            Detailed observation and scientific study of Neuroscience defines the structure and function of the nervous system. Major objective of the current thematic lab is to find the answers of hidden challenges linked with the new reports that can directly contribute and enhance our current understanding of how the nervous system works. It is also critical to understand the molecular defects, repair and restore the neural systems. Neuroengineering research targets those complex interface problems of living neural tissues and engineering techniques of non-living constructs.
+        </p>
+        <img src="{% static 'home/images/NSNE1_image-2020-05-07-13-46-pm.jpg' %}" class="d-block w-100"  alt="..."><br>
+
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Amit Kumar Mishra</b>
+                            </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Cellular & Molecular Neurobiology Unit</b>
+                                <p>
+
+Tight control of numerous cellular pathways is a vast and responsible task. To facilitate our research, we are combining various latest biochemical techniques’ that enable us to explore functional aspects of E3 Ubiquitin Ligases biology in a comprehensive way. Current efforts strive for identification, assessment, and characterization of E3 Ubiquitin Ligases substrates linked with the pathogenesis of neurodegenerative diseases, neurodevelopmental disorders, and cancer. The overall goal of our Research group on Cellular and Molecular Neurobiology is to understand how confidential network of cellular quality control mechanism (Autophagy and Ubiquitin Proteasome System linked with neurodegeneration and imperfect ageing, and how mutations that disrupt these processes impact disease development.
+                                    <img src="{% static 'home/images/AM_Lab_image-2020-05-03-20-22-pm.jpg' %}" class="d-block w-100"  alt="...">
+
+
+
+                                    <br>
+
+                                </p>
+                            </li>
+
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Understanding the molecular specific scales of tumor suppressor gene 101 (tsg101) encoded LRSAM1 E3 ubiquitin ligase in the elimination of polyglutamine proteins (Dr. Amit Mishra)</b>
+
+
+                            </li>
+
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+                                    Cell culture facility<br>
+                                    Floid cell imaging station<br>
+                                    Inverted microscope<br>
+                                    Gel dryer<br>
+                                    Gel documentation system<br>
+                                    -80 °C freezer<br>
+                                    Single tube multi-mode reader<br>
+                                    Nanodrop spectrophotometer<br>
+                                    Realtime PCR<br>
+                                    Thermal cycler<br>
+                                    Electrophoresis systems<br>
+                                    Automated cell counter<br>
+                                    Sonicator<br>
+                                    Gene pulser system<br>
+                                    Cryotome<br>
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}

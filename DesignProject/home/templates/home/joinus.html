@@ -1,0 +1,121 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Join Us{% endblock title %}
+{% block body %}
+{% load static %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bg-success text-md-center m-md-3 p-5 rounded text-white">
+            <h1>Join Us</h1>
+        </div>
+        
+        <div class="col-md-12 m-md-3 p-5">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="faculty-tab" data-bs-toggle="tab" data-bs-target="#faculty" type="button" role="tab" aria-controls="faculty" aria-selected="true">Faculty</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="researchers-tab" data-bs-toggle="tab" data-bs-target="#researchers" type="button" role="tab" aria-controls="researchers" aria-selected="false">Researchers</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="students-tab" data-bs-toggle="tab" data-bs-target="#students" type="button" role="tab" aria-controls="students" aria-selected="false">Students</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+                    <div>
+                        <h2 class="h3 text-primary underlined mt-4" id="current_a"><span class="underlined-text">Welcome to faculty position</span>
+                        
+                        </h2>
+                        <p class="mt-3"> Indian Institute of Jodhpur (IIT Jodhpur) invites online applications from Indian and Foreign Nationals with exceptional academic record, relevant teaching experience, excellent research record and valuable industrial experience for full-time faculty positions of Professor, Associate Professor and Assistant Professor to conduct teaching and research in the department of BioScience and BioEngineering. Candidates should have a PhD degree in BSBE, or a related field. The candidates are expected to have excellent research track record and commitment towards teaching.       
+                        </p>
+                        <p > While we encourage candidates from all areas of BSBE to apply, special emphasis will be given to the following areas: Cell & Molecular Physiology, Environmental Biotechnology, Biomaterials &   Tissue Engineering, Chemical Biology & Drug Design, Molecular Microbiology & Microbial Genomics, Biophysics, Computational Biology & Bioinformatics, Molecular Motors & Cell Motility, Neuroscience & Neuroengineering </p>
+                        <p class="ab" style="margin-left:20px;">   
+                            <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                             <a href="https://iitj.ac.in/faculty/index.php?id=why_pursue_a_career_@_iitj" target="_blank"> Why Choose IIT Jodhpur</a> 
+                        </p>
+                        <p class="ab" style="margin-left:20px;">
+                            <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                             <a href="https://iitj.ac.in/faculty/index.php?id=applicants_qualifications" target="_blank"> Eligibility</a> 
+                        </p>
+                        <p class="ab" style="margin-left:20px;">
+                                 <i class="far fa-hand-point-right" aria-hidden="true"></i> <a href="https://iitj.ac.in/faculty/index.php?id=scale_of_pay" target="_blank"> Scale Of Pay</a>
+                        </p>
+                        <p class="ab" style="margin-left:20px;">   
+                            <i class="far fa-hand-point-right" aria-hidden="true"></i><a href="https://iitj.ac.in/faculty/index.php?id=other_financial_incentives" target="_blank"> Other Financial Incentives</a> 
+                        </p>
+                        <p class="ab" style="margin-left:20px;">   
+                            <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                             <a href="https://iitj.ac.in/faculty/index.php?id=general_instruction" target="_blank"> Selection Procedure</a>
+                        </p>
+                        <p class="ab" style="margin-left:20px;">   
+                            <i class="far fa-hand-point-right" aria-hidden="true"></i>
+                             <a href="https://oa.iitj.ac.in/OA_REC_Faculty/" target="_blank"> Apply Online </a>
+                        </p>
+                    </div>
+
+                    
+                </div>
+                <div class="tab-pane fade" id="researchers" role="tabpanel" aria-labelledby="researchers-tab">
+                    <div>
+                    <h2 class="h3 text-primary underlined mt-4" id="current_a">
+                        <span class="underlined-text">Postdoctoral Fellows</span>    
+                    </h2>
+                    <p class="mt-3">
+                        We are actively seeking applications from motivated students for Postdoctoral positions, particularly in those of interest to the faculty members at the department.   
+                    </p>
+                    <p class="ab"><a href="https://rnd.iitj.ac.in/?page_id=234" target="_blank">
+                        <span style="color: blue;"><u>Read More</u></span></a>
+                    </p>
+                    <br>
+                    <hr>
+                    <h2 class="h3 text-primary underlined mt-4" id="current_a">
+                        <span class="underlined-text">Internships</span>    
+                    </h2>
+                    <p class="mt-3">
+                        We encourage highly motivated students to apply for short and long term internships. The short term internship is usually offered during the summer for three months, May-July. For long term internships, we encourage you to contact the faculty members directly.
+                    </p>
+                    <p>
+                        <strong>Highlights</strong>
+                        <ul style="margin-top: 0px;">
+                            <li></i>Option to pursue internship on campus. Accommodation will be arranged at IITJ hostels.</br>
+                            <li></i>Option to pursue BTech/MTech final year project work in collaboration with BSBE faculty, provided there is no objection from applicant’s university/institute.</br>
+                            <li></i>Opportunity to pursue longer term commitments in the form of PhD, MTech+PhD on satisfactory performance (subject to fulfilment of admission requirements).</br>
+                            <li></i>Opportunity to work in core and interdisciplinary areas in a department with faculties from diverse backgrounds.</br>
+                            <li></i>Opportunity to work in some of the cutting edge areas of computer science:
+                            <ul style="list-style-type: circle; margin-top: 0px;"> 
+                                <li></i>Cell & Molecular Physiology</br>
+                                <li></i>Machine Learning (including Deep Learning)</br>
+                                <li></i>Environmental Biotechnology</br>
+                                <li></i>Biomaterials &   Tissue Engineering</br>
+                                <li></i>Chemical Biology & Drug Design</br>
+                                <li></i>Molecular Microbiology & Microbial Genomics</br>
+                                <li></i>Biophysics</br>
+                                <li></i>Computational Biology & Bioinformatics</br>
+                                <li></i>Molecular Motors & Cell Motility</br>
+                                <li></i>Neuroscience & Neuroengineering</br>
+                                </p>
+                            </ul>
+                        </ul>
+                    </p>
+                    </div>
+                </div>
+            
+                <div class="tab-pane fade" id="students" role="tabpanel" aria-labelledby="students-tab">
+                    <p class="mt-3">
+                        <a href="../academic" target="_blank" style="text-decoration: none;">More Details- Click Here</a>
+                    </p>
+                </div>
+              </div>
+        </div>
+        
+    </div>
+    
+    
+</div>
+
+
+
+{% endblock body %}

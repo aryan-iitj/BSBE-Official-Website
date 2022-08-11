@@ -1,0 +1,52 @@
+
+{% extends 'home/base.html' %}
+
+{% block title %}Faculty & Advisors{% endblock title %}
+{% block body %}
+{% load static %}
+    {% comment %} <div class="container">
+    <div class="row">
+        {% for results in StaffResults %}
+        <div class="col-5" style="text-align: center;">
+        <img src="{{results.image.url}}" height="150" width="160" alt="{{results.name1}}" title="{{results.name1}}">
+            <br/>
+            <b>{{results.name1}}</b><br>
+            <b>{{results.designation}}</b><br>
+            {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+            {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+        <hr/>
+        </div>
+        {% endfor %}
+
+    </div>
+    </div> {% endcomment %}
+
+
+    <div class="container-fluid ">
+        <div class="row justify-content-evenly">
+            {% for results in StaffResults %}
+            
+            <div class="card m-2" style="max-width: 540px;">
+                <div class="row ">
+                  <div class="col-md-3">
+                    <img src="{{results.image.url}}" class="img-fluid rounded-start mt-3" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">{{results.name1}}</h5>
+                      <p class="card-text">{{results.designation}}<br>
+                        {% if results.email %}<b>Email:</b>{{results.email}}<br>{% endif %}
+                        {% if results.phoneNumber %} <b>Phone:</b>{{results.phoneNumber}}<br>{% endif %}
+                        </p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+            {% endfor %}
+        </div>
+        </div>
+
+
+{% endblock body %}

@@ -1,0 +1,294 @@
+{% extends 'home/base.html' %}
+
+{% block title %}ResearchAreas{% endblock title %}
+{% block body %}
+{% load static %}
+<div class="align-left">
+<style>
+body {font-family: Arial;}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #008000;;
+  text-align: center;
+  border: 1px solid #008000;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  border: 1px solid #008000;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color:#008000;
+  border: 1px solid #008000;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+  border: 1px solid #008000;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #008000;
+  border-top: none;
+}
+</style>
+
+
+
+
+<div class="container">
+    <div class="row justify-content-evenly">
+      {% comment %} <div class="col-md-3 bg-success text-md-center mt-3 mb-3 p-5 m rounded text-white">
+        <div class="container-fluid">
+          <div class="row justify-content-evenly">
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+            <div class="col-md-12 bg-success text-md-center  rounded text-white">
+              <h1>ResearchArea2</h1>
+            </div>
+          </div>
+        </div>
+
+    </div> {% endcomment %}
+        <div class="col-md-12 bg-success text-md-center mt-3 mb-3 p-5 rounded text-white">
+            <h1>Molecular Microbiology & Microbial Genomics</h1>
+        </div>
+        <br>
+
+        <p>
+            Microbial cells living in the human gut outnumber the total human cells in our bodies. We are also regularly exposed to several microbes from the environment. It is therefore essential to understand the biology of microbes that may be beneficial to us as well as those, which are potentially harmful. Using molecular methods the we attempt to understand the basic functioning of individual microbial cells as well as microbial communities. Microbes shift to a community mode of growth, often under stressed conditions, by forming a biofilms. Biofilms can be polymicrobial and are difficult to eliminate as they are resistant to stresses that individual bacteria are sensitive to. A small group of researchers working under this theme use molecular methods and genomics approaches to understand the physiology of individual microbes as well as their communities.
+        </p>
+        <img src="{% static 'home/images/MMMG1_image-2020-05-07-13-57-pm.jpg' %}" class="d-block w-100"  alt="..."><br>
+        <br>
+        <div class="col-md-1-12">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+
+Faculty Members associated with the lab
+
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                     <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Dr.Shankar Manoharan</b>
+                            </li>
+                        <li>
+                            <b>Dr.Neha Jain</b>
+                        </li>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Groups under this theme
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                    <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Microbial Physiology Group</b>
+                                <p>
+                                The Microbial Physiology laboratory (MPL) has two major focus areas:
+
+1. Virulence regulation in hospital-associated pathogens<br>
+
+We study how microbes control the production of important factors that are necessary to cause disease in a host.<br>
+
+2. Medically relevant microbial communities<br>
+
+We explore the human gut microbiota in the context of health and diseased states to identify patterns that contribute to a better physiological state
+
+                                    <img src="{% static 'home/images/MS_Lab_image-2020-05-03-20-17-pm.jpg' %}" class="d-block w-100"  alt="...">
+                                    <br>
+
+                                </p>
+                            </li>
+                        <li>
+                            <b>Biofilms & Amyloid Biology Group</b>
+                            <p>
+                                We are an exclusive group with diverse yet overlapping interests. The research in lab revolves around the altered folding of proteins which leads to formation of ordered aggregates called amyloids. We are interested in understanding how bacterial amyloids contribute to biofilm formation and severe infections in humans. We use a combination of biophysical techniques to elucidate the mechanism of formation and inhibition of amyloid-dependent biofilm by bacteria under different environmental conditions. Currently, our experimental plan is limited to in vitro studies however in the future we will extend the study into cell culture and animal based model. The group is interested, but not limited to the following aspects of bacterial amyloids:
+                                <br>
+                                1. Understanding formation of microbial amyloids and their role in biofilm infections.
+                                <br>
+                                2. Development of strategies to combat amyloid-derived biofilm formation.
+                                <br>
+                                <img src="{% static 'home/images/RV Lab_image-2020-05-03-16-48-pm.jpg' %}" class="d-block w-100"  alt="...">
+
+
+                            </p>
+                        </li>
+                        <br>
+                        <br>
+                        </ol>
+                    </div>
+
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Projects that the lab is currently catering to
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                                      <div class="accordion-body">
+                    <ol>
+                        <br>
+                            <li>
+
+                                <b>Implementation of host proteins to combat biofilm infections (Dr. Neha Jain)</b>
+                                <p>
+                                    Escherichia coli and related enteric bacteria form communities called biofilms that are resistant to host immune defenses and antibiotic treatment. Therefore, alternative approaches to conventional antibiotic therapy are urgently needed to treat biofilm related infections. The biofilm matrix is composed of exopolysaccharides, extracellular DNA and protein polymers commonly known as amyloid fibrils. Curli are amyloid fibrils produced in E. coli. The major subunit of the curli is CsgA protein that is capable of forming amyloid fibrils under in vitro conditions. An innovative strategy to prevent biofilm formation is to inhibit amyloid aggregation on the cell surface. We are putting our efforts in identifying and characterizing chaperone-like proteins that can inhibit amyloid and biofilm formation.
+                                </p>
+                            </li>
+                        <li>
+                            <b>Modulation of α-synuclein amyloid assembly using human chaperone like proteins (Dr. Neha Jain)</b>
+                            <p>
+                                Most of the human proteins rarely but remarkably undergo spontaneous conformational change in response to genetic or environmental stimuli. α-Synuclein is one such protein that undergoes conformational switch resulting in amyloid formation that is linked to Parkinson’s Disease (PD) progression. The present status of research on α-synuclein aggregation and PD progression reveals that the traditional therapy may not work to cure the disease in the long term. There is dire need of new therapeutic interventions that can either prevent PD or suppress it at the earlier stage of progression. The role of innate chaperone-like proteins in circumventing α-synuclein amyloid assembly and their potential as future drugs is still in its infancy. Here, we plan to explore the anti-amyloid activity of chaperone-like proteins against synuclein aggregation.
+                            </p>
+                        </li>
+                        <li>
+                            <b>Hospital-associated ESKAPE pathogens: Unravelling novel regulatory layers controlling virulence and persistence (Dr. Shankar Manoharan)</b>
+                            <p>
+                                Patients who contract hospital-associated infections suffer from infections of the respiratory tract, urinary tract, blood stream, soft tissues etc. In a smart move, hospital-associated pathogens are rapidly acquiring resistance to various antibiotics that are routinely used in therapy. This means that it is becoming increasingly difficult to treat infections caused by these bacteria.
+                                <br>
+                                This is where we enter the picture. We take a two-pronged approach to tackle this problem:
+                                <br>
+                                1. Study the intricate regulatory processes that control virulence in hospital-associated pathogens to expand our knowledge about the enemy that we are fighting
+                                <br>
+                                2. Study the virulence factors of hospital-associated pathogens to assess if they can be affected to impact the virulence of the pathogen
+                            </p>
+                        </li>
+                        <li>
+                            <b>Evaluation of the effect of selected molecules on capsule synthesis by virulent Klebsiella pneumoniae (Dr. Shankar Manoharan)</b>
+                            <p>
+                                Klebsiella pneumoniae is a hospital-associated pathogen that is increasingly causing nosocomial infections. The enigmatic Klebsiella capsule is one of the major virulence factors protecting the microbe from several host defences. We study possible inhibitory effects of selected molecules on the synthesis of capsular polysaccharide by Klebsiella pneumoniae.
+                            </p>
+                        </li>
+
+                        <br>
+                        </ol>
+                    </div>
+                </div>
+              </div>
+
+                <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                  <button class="accordion-button collapsed btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Key Instrumentation Available
+                  </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
+                        <br>
+                                <p>
+                                AKTA protein purification system<br>
+                                Probe sonicator<br>
+                                Multi-mode plate reader<br>
+                                Microvolume fluorometer<br>
+                                Electrophoresis systems with blotting apparatus<br>
+                                Hybridization oven<br>
+                                Microplate reader<br>
+                                Laboratory workstation<br>
+                                Bacteriological incubators<br>
+                                Incubator shakers<br>
+                                Refrigerated centrifuge<br>
+
+                                </p>
+                        <br>
+                        </l>
+                    </div>
+                </div>
+              </div>
+
+
+<script>
+function opentype(evt,facultytype) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(facultytype).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+{% endblock body %}
